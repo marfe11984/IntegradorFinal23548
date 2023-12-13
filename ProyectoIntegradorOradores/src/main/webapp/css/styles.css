@@ -1,0 +1,154 @@
+/*panel general de colores utilizados p armar la web*/
+:root {
+    /*Index*/
+    --bgcolorheader: rgb(53, 58, 64);
+    --btncolor: rgb(41, 167, 68);
+    --bgjava: rgb(255, 192, 7);
+    --bgreact: rgb(23, 162, 185);
+    --bgstartups: rgb(220, 53, 70);
+    --bgenviar: rgb(150, 201, 62);
+    --bgfooter: rgb(29, 58, 74);
+    --textcolorform:rgb(115,130,137);
+    --bordercardcolor:rgb(223,223,223);
+
+    /*Ticket*/
+    --borderEstudiante: rgb(0, 123, 255);
+    --borderTrainee: rgb(23, 162, 184);
+    --borderJunior: rgb(255, 193, 7);
+    --colorpresentardocumentacion: rgb(108,117,125);
+    --bordertotalapagar: rgb(184, 218, 255);
+    --bgtotalapagar: rgb(204, 229, 255);
+    --colortotalapagar: rgb(0, 64, 133);
+    --bgborrarresumen: rgb(151, 201, 62);  
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header{
+    background-color: var(--bgcolorheader)!important;
+}
+
+.filter{
+    filter: brightness(0.6);
+}
+
+.borde-transparente{
+    border-color: -- !important;
+}
+
+/*PROPIEDADES EN CARD ORADORES */
+    .card-oradores{
+        width:80% !important;
+    }
+
+    .btnjava {
+        background: var(--bgjava) !important;
+        border-color: var(--bgjava) !important;
+        font-weight: 500 !important;
+    }
+
+    .btnreact {
+        background: var(--bgreact) !important;
+        border-color: var(--bgreact) !important;
+    }
+
+    .btnnegocios {
+        background: var(--bgcolorheader) !important;
+        border-color: var(--bgcolorheader) !important;
+    }
+
+    .btnstartups {
+        background: var(--bgstartups) !important;
+        border-color: var(--bgstartups) !important;
+    }
+
+
+/*PROPIEDADES DE LAS CARDS-TICKET*/
+.borde-estudiante{
+    border-color: var(--borderEstudiante) !important;
+}
+
+.borde-Trainee{
+    border-color: var(--borderTrainee) !important;
+}
+
+.borde-junior{
+    border-color: var(--borderJunior) !important;
+}
+
+.texto-cards{
+    color: var(--colorpresentardocumentacion);
+}
+
+
+/*PROPIEDADES EN BS AS-Octubre*/ 
+    .bg-BsAsOctubre{
+        background-color: var(--bgcolorheader) !important;
+    }
+
+    #border-BsASOctubre{
+        border-color: rgb(53, 58, 64);
+    }
+    
+
+/*PROPIEDADES EN FORMULARIO INDEX y TICKET*/
+    .texto-formulario{
+        font-size: 0.8em;
+        color: var(--textcolorform) !important;
+    }
+
+    .btn-formulario{
+        background-color: var(--bgenviar) !important;
+        border-color: var(--bgenviar) !important;
+    }
+
+    .totalapagar{
+        background-color: var(--bgtotalapagar) !important;
+        border-color: var(--bordertotalapagar);
+        border-radius: 5px;
+        color: var(--colortotalapagar) !important;;
+    }
+
+
+/*PROPIEDADES DEL FOOTER*/
+    footer{
+        height: 5em;
+        background-color: var(--bgfooter);
+    }
+
+
+/*PROPIEDADES RESPONSIVE DE PANTALLA (impactan cuando cambia el tamaño de pantalla)*/
+
+@media screen and (max-width: 800px){   /*cuando llegue a 800px, que cambie la altura del footer*/
+    footer{
+        height: 7em;
+    }
+}
+
+@media screen and (max-width: 665px){   /*cuando llegue a 665px, que cambie la altura del carrousel*/
+    .text-confBsAs{
+        font-size: 0.8em !important;
+    }
+    .btn-confBsAs{
+        margin: 0.5% 0 !important;
+    }
+    .img-carousel-modif{
+        height: 55vh !important;
+    }
+}
+
+@media screen and (max-width: 595px){   /*cuando llegue a 595px, que cambie la altura del footer*/
+    footer{
+        height: 12em;
+    }
+    #ticketJunior{
+        margin-top: 1em;
+    }
+    #categoria{
+        margin-top: 1.5em;
+    }
+}
+
+
