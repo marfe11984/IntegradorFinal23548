@@ -19,9 +19,9 @@
 	ResultSet rsId =null;
  
 	//2-Conecto con la base de datos
-	MySqlConexion conexion = new MySqlConexion(); //2-1-Genero el objeto conexion
+	//MySqlConexion conexion = new MySqlConexion(); //2-1-Genero el objeto conexion
 													  //2-2-Agrego libreria %@ page import = pf.integrador.java.MySqlConexion
-	cn = conexion.conectar(); //2-3-Genero la conexión con la base de datos, con el método conectar(), de la clase MySqlConexion.java (archivo que se copió  y pego en el punto 1º). Este nos hace la conexión con (conexión = DriverManager.getConnection(URL,  USEER, PASS), de la base de datos.
+	cn = MySqlConexion.conectar(); //2-3-Genero la conexión con la base de datos, con el método conectar(), de la clase MySqlConexion.java (archivo que se copió  y pego en el punto 1º). Este nos hace la conexión con (conexión = DriverManager.getConnection(URL,  USEER, PASS), de la base de datos.
 	
 	
 	try{

@@ -34,7 +34,7 @@ public class MySqlConexion { //1-se crea una clase privada para que nadie mas fu
 	}
 	
 	//3-GENERO LA CONEXION CON LA BASE DE DATOS.
-	public Connection conectar() { // Se define el metodo "conectar", generando una conexion (Connection) que debe devolver algo
+	public static Connection conectar() { // Se define el metodo "conectar", generando una conexion (Connection) que debe devolver algo
 		
 		Connection conexion = null;  //3-1-genero un metodo para que cuando haga la llamada,me genere la conexion y que contenga al bloque try-catch
                                      //para ello defino la variable conexion dentro del metodo (Connection) y le asigno un null  		
